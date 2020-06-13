@@ -1,0 +1,120 @@
+body{
+  margin: 0px;
+}
+
+nav {
+  background-color: rgb(99, 98, 98);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+
+nav a , footer a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  margin: 10px;
+}
+
+.carousel{
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+  margin-bottom: 50px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  height: 500px;
+  width: 100%;
+  background-color: lightgrey;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+form h2{
+  padding-left: 40px;
+}
+
+form input, form textarea, form select{
+  margin: 10px 5% 10px 5%;
+}
+
+select option[value=placeholder] {
+  display: none;
+}
+
+form textarea {
+  height: 150px;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+footer {
+  display: flex;
+  padding: 20px 50px;
+  background-color: rgb(99, 98, 98);
+  color: white;
+}
+
+.footer-item-1{
+  flex-grow: 3;
+}
+.footer-item-2{
+  flex-grow: 4;
+}
+
+.footer-item-3{
+  flex-grow: 3;
+  align-self: center;
+  font-weight: bold;
+}
+
+@media (max-width: 961px){
+  .container {
+    flex-direction: column;
+    margin: 10px 5% 10px 5%;
+  }
+
+  .item {
+    height: 300px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  footer, .footer-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-item-2 p:first-child, .footer-item-3 p:first-child {
+    margin-top: 0px;
+  }
+}

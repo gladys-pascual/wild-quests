@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: black;
+}
+
+nav ul{
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
+
+.carousel{
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+  margin-bottom: 50px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section article {
+  width: 32.3%;
+  height: 500px;
+  background-color: lightgrey;
+  padding: 0px 0px 10px 10px;
+  float: left;
+  margin: 20px auto 150px 1%;
+}
+
+form input, form textarea{
+  width: 80%;
+  margin: 10px 10% 10px 10%;
+}
+
+@media (max-width: 961px){
+  section .carousel, section article{
+    display: none;
+  }
+}
